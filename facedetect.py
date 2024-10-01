@@ -4,6 +4,8 @@ alg = "haarcascade_frontalface_default.xml"
 
 haar_cascade = cv2.CascadeClassifier(alg)
 cam = cv2.VideoCapture(0)
+address= ""
+cam.open(address)
 
 while True:
     _,img = cam.read()
